@@ -1,0 +1,22 @@
+# --- Python / Django ---
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+db.sqlite3
+.env
+media/
+staticfiles/
+
+# --- Node / React ---
+node_modules/
+dist/
+dist-ssr/
+*.local
+.DS_Store
+
+# --- IDEs ---
+.vscode/
+.idea/
