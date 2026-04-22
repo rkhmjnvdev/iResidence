@@ -18,6 +18,7 @@ class Apartment(models.Model):
     floor = models.IntegerField(verbose_name="Этаж")
     number = models.CharField(max_length=10, verbose_name="№ Квартиры")
     area = models.DecimalField(max_digits=7, decimal_places=2, verbose_name="Площадь м2")
+    last_payment_note = models.TextField(blank=True, null=True, verbose_name="Заметка к последнему платежу")
     total_price = models.DecimalField(max_digits=12, decimal_places=2, verbose_name="Общая цена ($)")
 
     def __str__(self):
