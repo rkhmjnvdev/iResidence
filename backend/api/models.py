@@ -12,7 +12,11 @@ class Client(models.Model):
 
 class Apartment(models.Model):
     BLOCK_CHOICES = [('A', 'Блок A'), ('B', 'Блок B'), ('C', 'Блок C')]
-    
+    CURRENCY_CHOICES = [
+        ('USD', 'USD'),
+        ('UZS', 'UZS'),
+    ]
+    currency = models.CharField(max_length=3, choices=CURRENCY_CHOICES, default='USD')
     client = models.ForeignKey(Client, on_delete=models.CASCADE, related_name='apartments')
     block = models.CharField(max_length=1, choices=BLOCK_CHOICES, verbose_name="Блок")
     floor = models.IntegerField(verbose_name="Этаж")
