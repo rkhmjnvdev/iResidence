@@ -102,7 +102,7 @@ function App() {
       <nav className="navbar border-0 p-0 mb-4" style={{ backgroundColor: '#C5A059', width: '100%' }}>
         <div className="container-fluid d-flex justify-content-center py-3">
           <span className="navbar-brand h1 mb-0 d-flex align-items-center text-white border-0">
-            <img className='logo-img' src='/iresidence1.png' alt="Logo" style={{height: '45px'}} />
+            <img className='logo-img' src='/iresidence1.png' alt="Logo" />
             <h3 className="m-0 fw-bold ms-3">iResidence</h3>
           </span>
         </div>
