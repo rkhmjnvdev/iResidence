@@ -20,6 +20,7 @@ class Apartment(models.Model):
     area = models.DecimalField(max_digits=7, decimal_places=2, verbose_name="Площадь м2")
     currency = models.CharField(max_length=3, choices=CURRENCY_CHOICES, default='USD')
     total_price = models.DecimalField(max_digits=12, decimal_places=2, verbose_name="Общая цена")
+    contract_price = models.DecimalField(max_digits=15, decimal_places=2, null=True, blank=True, verbose_name="Цена по договору")
     last_payment_note = models.TextField(blank=True, null=True, verbose_name="Заметка к последнему платежу")
 
     def __str__(self):

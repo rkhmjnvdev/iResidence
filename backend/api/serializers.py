@@ -24,6 +24,7 @@ class ApartmentSerializer(serializers.ModelSerializer):
             'number', 
             'area', 
             'total_price', 
+            'contract_price',
             'currency', # Добавили валюту квартиры
             'payments', 
             'total_paid', 
